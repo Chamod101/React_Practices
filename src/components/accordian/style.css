@@ -1,0 +1,37 @@
+.Accordian_holder{
+  width: 600px;
+  margin: 10px;
+}
+
+.Accordian_item{
+  margin: 5px;
+  
+}
+
+.item{
+  border: 1px solid black;
+  border-radius: 3px;
+  margin-bottom: 10px;
+  padding: 5px;
+}
+
+.title_section{
+  display: flex;
+  gap: 10px;
+  justify-content: space-between;
+  margin-right:10px ;
+  cursor: pointer;
+}
+
+.Enable_btn{
+  margin: 5px;
+  height: 40px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.Enable_btn:hover{
+  background-color: rgba(101, 101, 101, 0.545);
+}
