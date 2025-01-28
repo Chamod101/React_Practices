@@ -1,5 +1,6 @@
 import React from "react";
 import Menu_list from "./menu_list";
+import "./styles.css"
 
 const TreeView =({menus =[]})=>{
   return(

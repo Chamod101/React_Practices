@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import Menu_list from './menu_list';
+import { FaMinus, FaPlus } from 'react-icons/fa';
 
 const Menu_item = ({item}) => {
 
@@ -10,12 +11,12 @@ const Menu_item = ({item}) => {
   }
 
   return (
-    <li>
+    <li className='menu_item'>
       <div style={{display:'flex', gap:'20px'}}>
       <p>{item.label}</p>
       {item.children ? <span onClick={()=>handleToggleOnClick(item.label)}>
         {
-          displayChildern[item.label] ? '-':'+'
+          displayChildern[item.label] ? <FaMinus size={10}/>:<FaPlus size={10}/>
         }
       </span> : null}
       </div>
