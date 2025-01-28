@@ -1,0 +1,42 @@
+.container{
+  width: 100vw;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  overflow-y: scroll;
+  padding: 0;
+  box-sizing: border-box;
+  
+}
+
+.Data_container{
+  display: grid;
+  grid-template-columns: repeat(5,1fr);
+  gap: 10px;
+  margin-left: 5px;
+  padding: 0;
+}
+
+.item{
+  padding: 20px;
+  border: 1px solid blue;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.item > img{
+  width: 150px;
+  height: 200px;
+}
+
+.Load_more{
+  width: 100px;
+  height: 30px;
+  margin: 10px;
+  border: none;
+  background-color: rgba(165, 42, 42, 0.434);
+  color: white;
+  cursor: pointer;
+}
