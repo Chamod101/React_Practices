@@ -1,6 +1,7 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
 import "./styles.css";
+import DOG from '../../assets/Dog.gif'
 
 const Scroller = ({ url }) => {
   const [data, setData] = useState([]);
@@ -55,12 +56,18 @@ const Scroller = ({ url }) => {
             className="current_progress"
             style={{ width: `${scrollPercentage}%` }}
           ></div>
+          <div
+            className="start_mark"
+            style={{ left: `calc(${scrollPercentage}% - 10px)`}} // Adjust the offset
+          >
+            <img src={DOG} alt="Dog GIF" />
+          </div>
         </div>
       </div>
 
       <div className="data_container">
-        {data.map((item) => (
-          <p>{item.title}</p>
+        {data.map((item,index) => (
+          <p key={index}>{item.title}</p>
         ))}
       </div>
     </div>

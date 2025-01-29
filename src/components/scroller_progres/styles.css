@@ -18,16 +18,31 @@
 
 .tracking_container{
   width: 100%;
-  height: 10px;
+  height: 5px;
   background-color: #ebdddd;
+  position: relative;
 }
 
 .current_progress{
-  height: 10px;
+  height: 5px;
   background-color: rgb(124 177 137);
   width: 0;
 }
 
 .data_container{
   margin-top: 90px;
+}
+
+.start_mark {
+  position: absolute;
+  top: -50px;
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  /* transition: left 0.01s ease-in-out;  */
+}
+
+.start_mark img{
+  height: 100px;
+  width: 100px;
 }
