@@ -1,0 +1,33 @@
+.container{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.top_container{
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  width: 100%;
+  text-align: center;
+  background-color: #adfecd;
+  height: 90px;
+}
+
+.tracking_container{
+  width: 100%;
+  height: 10px;
+  background-color: #ebdddd;
+}
+
+.current_progress{
+  height: 10px;
+  background-color: rgb(124 177 137);
+  width: 0;
+}
+
+.data_container{
+  margin-top: 90px;
+}

@@ -7,6 +7,7 @@ import TreeView from "./components/tree_view"
 import menus from "./components/tree_view/data"
 import QRGenerater from "./components/qrGenerater"
 import LightDarkMode from "./components/light_dark_theme"
+import Scroller from "./components/scroller_progres"
 
 function App() {
 
@@ -19,7 +20,8 @@ function App() {
      {/* <Load_More/> */}
      {/* <TreeView menus={menus}/> */}
      {/* <QRGenerater/> */}
-     <LightDarkMode/>
+     {/* <LightDarkMode/> */}
+     <Scroller url={'https://dummyjson.com/products?limit=100'}/>
     </>
   )
 }
