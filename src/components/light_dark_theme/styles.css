@@ -1,0 +1,82 @@
+:root {
+  --background-light: linear-gradient(135deg, #ffffff, #dddddd);
+  --background-dark: linear-gradient(135deg, #000000, #333333);
+
+  --text_primary-light: #000;
+  --button_bg-light: #000;
+  --button_text-light: #fff;
+
+  --text_primary-dark: #fff;
+  --button_bg-dark: #fff;
+  --button_text-dark: #000;
+}
+
+[data-theme='light'] {
+  --background: var(--background-light);
+  --text_primary: var(--text_primary-light);
+  --button_bg: var(--button_bg-light);
+  --button_text: var(--button_text-light);
+}
+
+[data-theme='dark'] {
+  --background: var(--background-dark);
+  --text_primary: var(--text_primary-dark);
+  --button_bg: var(--button_bg-dark);
+  --button_text: var(--button_text-dark);
+}
+
+.light_dark_mode {
+  background: var(--background);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 20px;
+  transition: all 0.7s ease-in-out;
+  background-size: 400% 400%;
+  background-position: top left;
+}
+
+.light_dark_mode.transition-light {
+  animation: gradientFlowLight 0.7s ease-in-out forwards;
+}
+
+.light_dark_mode.transition-dark {
+  animation: gradientFlowDark 0.7s ease-in-out forwards;
+}
+
+@keyframes gradientFlowLight {
+  0% {
+    background-position: bottom right;
+  }
+  100% {
+    background-position: top left;
+  }
+}
+
+@keyframes gradientFlowDark {
+  0% {
+    background-position: top left;
+  }
+  100% {
+    background-position: bottom right;
+  }
+}
+
+.light_dark_mode p {
+  color: var(--text_primary);
+  font-size: 40px;
+}
+
+.light_dark_mode button {
+  background-color: var(--button_bg);
+  color: var(--button_text);
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.light_dark_mode button:hover {
+  opacity: 0.8;
+}

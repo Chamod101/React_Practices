@@ -6,6 +6,7 @@ import Load_More from "./components/load_more"
 import TreeView from "./components/tree_view"
 import menus from "./components/tree_view/data"
 import QRGenerater from "./components/qrGenerater"
+import LightDarkMode from "./components/light_dark_theme"
 
 function App() {
 
@@ -17,7 +18,8 @@ function App() {
      {/* <Img_slider url ={'https://picsum.photos/v2/list'} limit ={5}/> */}
      {/* <Load_More/> */}
      {/* <TreeView menus={menus}/> */}
-     <QRGenerater/>
+     {/* <QRGenerater/> */}
+     <LightDarkMode/>
     </>
   )
 }
