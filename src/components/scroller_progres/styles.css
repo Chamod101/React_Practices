@@ -1,4 +1,4 @@
-.container{
+/* .container{
   height: 100%;
   width: 100%;
   display: flex;
@@ -25,7 +25,7 @@
 
 .current_progress{
   height: 5px;
-  background-color: rgb(124 177 137);
+  
   width: 0;
 }
 
@@ -39,10 +39,10 @@
   height: 100px;
   width: 100px;
   border-radius: 50%;
-  /* transition: left 0.01s ease-in-out;  */
+   transition: left 0.01s ease-in-out;  
 }
 
 .start_mark img{
   height: 100px;
   width: 100px;
-}
+} */
