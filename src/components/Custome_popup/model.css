@@ -1,0 +1,92 @@
+.modal{
+  position: fixed;
+  z-index: 1;
+  padding-top: 50PX;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  backdrop-filter: blur(2px);
+}
+
+.content{
+  background-color: rgba(177, 155, 197, 0.218);
+  width: 350px;
+  height: 200px;
+  border: none;
+  border-radius: 10px;
+  animation-name: animateModel;
+  animation-duration: 0.5s;
+  position: relative;
+}
+
+.header{
+  display: flex;
+  width: 100%;
+  height: 40px;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgba(0, 0, 255, 0.126);
+  border: none;
+  border-radius: 10px 10px 0 0;
+}
+
+.header >h2{
+  margin-left: 10px;
+}
+
+.header >span{
+  margin-right: 10px;
+  background-color: rgba(2, 1, 0, 0.321);
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  color: white;
+}
+
+.header >span:hover{
+  background-color: rgba(2, 1, 0, 0.652);
+}
+
+.body{
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 0;
+}
+
+.footer{
+  margin-top: 0;
+  background-color: rgba(0, 0, 255, 0.126);
+  width: 100%;
+  height: 40px;
+  border: none;
+  border-radius: 0 0 10px 10px;
+}
+
+.footer >h2{
+  margin-left: 10px;
+}
+
+@keyframes animateModel{
+  from {
+    top: -200px;
+    opacity: 0;
+  }
+
+  to {
+    top: 0;
+    opacity: 1;
+  }
+}

@@ -9,6 +9,7 @@ import QRGenerater from "./components/qrGenerater"
 import LightDarkMode from "./components/light_dark_theme"
 import Scroller from "./components/scroller_progres"
 import Tab_test from "./components/custome_tabs/tab_test"
+import Model_test from "./components/Custome_popup/model_test"
 
 
 function App() {
@@ -24,7 +25,8 @@ function App() {
      {/* <QRGenerater/> */}
      {/* <LightDarkMode/> */}
      {/* <Scroller url={'https://dummyjson.com/products?limit=100'}/> */}
-     <Tab_test/>
+     {/* <Tab_test/> */}
+     <Model_test/>
     </>
   )
 }
