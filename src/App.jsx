@@ -10,6 +10,7 @@ import LightDarkMode from "./components/light_dark_theme"
 import Scroller from "./components/scroller_progres"
 import Tab_test from "./components/custome_tabs/tab_test"
 import Model_test from "./components/Custome_popup/model_test"
+import Profile_finder from "./components/github_profile_finder"
 
 
 function App() {
@@ -26,7 +27,8 @@ function App() {
      {/* <LightDarkMode/> */}
      {/* <Scroller url={'https://dummyjson.com/products?limit=100'}/> */}
      {/* <Tab_test/> */}
-     <Model_test/>
+     {/* <Model_test/> */}
+     <Profile_finder/>
     </>
   )
 }
