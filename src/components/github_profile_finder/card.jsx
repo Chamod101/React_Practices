@@ -1,4 +1,5 @@
 import React from "react";
+import './style.css'
 
 const Card = ({ user }) => {
   return (
@@ -8,19 +9,19 @@ const Card = ({ user }) => {
         <h1>{user.login}</h1>
       </div>
       <div className="bio">
-        <div>
+        <div className="div_bio1">
           <h3>Bio</h3>
           <p>{user.bio}</p>
         </div>
-        <div>
+        <div className="div_bio2">
           <h3>Company</h3>
           <p>{user.company ? user.company : 'Null'}</p>
         </div>
-        <div>
+        <div className="div_bio3">
           <h3>Blog</h3>
           <p>{user.blog}</p>
         </div>
-        <div>
+        <div className="div_bio4">
           <h3>Location</h3>
           <p>{user.location}</p>
         </div>
