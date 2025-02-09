@@ -13,6 +13,7 @@ import Model_test from "./components/Custome_popup/model_test"
 import Profile_finder from "./components/github_profile_finder"
 import AutoComplete from "./components/text_autocomplete"
 import Tik_tak_toe from "./components/tik_tak_toe"
+import UseFetchTest from "./components/useFetch/useFetchTest"
 
 
 function App() {
@@ -32,7 +33,8 @@ function App() {
      {/* <Model_test/> */}
      {/* <Profile_finder/> */}
      {/* <AutoComplete/> */}
-     <Tik_tak_toe/>
+     {/* <Tik_tak_toe/> */}
+     <UseFetchTest/>
     </>
   )
 }
