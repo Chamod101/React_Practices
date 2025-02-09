@@ -1,0 +1,19 @@
+.container{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.tik_tak_toe_container {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  width: 300px;
+}
+
+.square {
+  width: 100px;
+  height: 100px;
+}

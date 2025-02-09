@@ -11,6 +11,8 @@ import Scroller from "./components/scroller_progres"
 import Tab_test from "./components/custome_tabs/tab_test"
 import Model_test from "./components/Custome_popup/model_test"
 import Profile_finder from "./components/github_profile_finder"
+import AutoComplete from "./components/text_autocomplete"
+import Tik_tak_toe from "./components/tik_tak_toe"
 
 
 function App() {
@@ -28,7 +30,9 @@ function App() {
      {/* <Scroller url={'https://dummyjson.com/products?limit=100'}/> */}
      {/* <Tab_test/> */}
      {/* <Model_test/> */}
-     <Profile_finder/>
+     {/* <Profile_finder/> */}
+     {/* <AutoComplete/> */}
+     <Tik_tak_toe/>
     </>
   )
 }
